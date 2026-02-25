@@ -2,13 +2,28 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <title>薬剤師国家試験トレーニングHub</title>
+  <title>くまやく 薬剤師国家試験トレーニングハブ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google AdSense 所有権確認用コード（あなたの client ID のままでOK） -->
+  <!-- ページ説明（検索用） -->
+  <meta name="description" content="くまやく 薬剤師国家試験トレーニングハブは、薬理・病態・薬物治療・法規・実務などをスマホで反復練習できる薬学生向けの学習Webアプリ集です。">
+
+  <!-- favicon（/img/favicon.ico をアップしておく） -->
+  <link rel="icon" href="/img/favicon.ico" />
+
+  <!-- Google AdSense 所有権確認用コード -->
   <script async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5073139651753111"
           crossorigin="anonymous"></script>
+
+  <!-- OGP / SNS 用 -->
+  <meta property="og:title" content="くまやく 薬剤師国家試験トレーニングハブ" />
+  <meta property="og:description" content="悟り顔のくま薬剤師と一緒に、薬理・病態・薬物治療・法規・実務などをスキマ時間でトレーニングできる薬学生向け学習サイトです。" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://hiroki-hero888.github.io/" />
+  <meta property="og:image" content="https://hiroki-hero888.github.io/img/ogp-kumayaku.png" />
+  <meta property="og:site_name" content="くまやく 薬剤師国家試験トレーニングハブ" />
+  <meta name="twitter:card" content="summary_large_image" />
 
   <style>
     :root {
@@ -43,17 +58,36 @@
       padding-bottom: 16px;
       margin-bottom: 20px;
     }
+
+    .logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 4px;
+      margin-bottom: 10px;
+    }
+    .site-logo {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    }
+    .logo-text {
+      text-align: left;
+    }
+
     .site-title {
       margin: 0;
       font-size: 1.6rem;
       font-weight: 700;
-      text-align: center;
     }
     .site-subtitle {
       margin: 6px 0 0;
       font-size: 0.95rem;
       color: var(--text-sub);
-      text-align: center;
       line-height: 1.6;
     }
 
@@ -64,8 +98,20 @@
       background: var(--primary-soft);
       color: var(--primary);
       font-size: 0.75rem;
-      margin: 8px auto 0;
-      text-align: center;
+      margin: 0 0 4px;
+      text-align: left;
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      margin: 8px 0 0;
+    }
+    .hero-visual img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
     }
 
     /* 広告枠（トップページ用） */
@@ -207,119 +253,37 @@
       .site-title {
         font-size: 1.4rem;
       }
+      .logo-row {
+        flex-direction: column;
+        text-align: center;
+      }
+      .logo-text {
+        text-align: center;
+      }
     }
-
-        .hero-visual {
-      display: flex;
-      justify-content: center;
-      margin: 8px 0 14px;
-    }
-    .hero-visual svg {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
-    }
-    
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <div class="badge">薬剤師国家試験対策 Webアプリ集</div>
-      <h1 class="site-title">薬剤師国家試験トレーニングHub</h1>
-      <p class="site-subtitle">
-        薬剤師国家試験の主要分野（薬理・病態・薬物治療・法規・実務など）を、<br>
-        スキマ時間で反復トレーニングできる個人運営の学習サイトです。
-      </p>
-    </header>
-
-        <header>
-      <div class="hero-visual">
-        <!-- 🐻 薬剤師っぽい横長くまさんバナー（SVG） -->
-        <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-          <title id="title">薬剤師国家試験トレーニングのイメージバナー</title>
-          <desc id="desc">錠剤や薬瓶、ノートとペン、かわいいくまさん薬剤師が並んだ学習サイトのイメージ図</desc>
-
-          <!-- 背景 -->
-          <defs>
-            <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#e3f2fd" />
-              <stop offset="100%" stop-color="#fce4ec" />
-            </linearGradient>
-          </defs>
-          <rect x="0" y="0" width="800" height="200" fill="url(#bgGrad)" />
-
-          <!-- 左：ノート -->
-          <rect x="40" y="50" width="130" height="100" rx="10" fill="#ffffff" stroke="#c5cae9" stroke-width="2" />
-          <!-- ノートの行 -->
-          <line x1="55" y1="70" x2="155" y2="70" stroke="#e0e0e0" stroke-width="2" />
-          <line x1="55" y1="85" x2="155" y2="85" stroke="#e0e0e0" stroke-width="2" />
-          <line x1="55" y1="100" x2="155" y2="100" stroke="#e0e0e0" stroke-width="2" />
-          <line x1="55" y1="115" x2="155" y2="115" stroke="#e0e0e0" stroke-width="2" />
-          <line x1="55" y1="130" x2="155" y2="130" stroke="#e0e0e0" stroke-width="2" />
-
-          <!-- ペン -->
-          <rect x="75" y="135" width="90" height="10" rx="4" fill="#42a5f5" />
-          <rect x="75" y="135" width="14" height="10" rx="4" fill="#1e88e5" />
-          <polygon points="165,135 178,140 165,145" fill="#1565c0" />
-
-          <!-- 中央：くま薬剤師 -->
-          <!-- 顔 -->
-          <circle cx="400" cy="95" r="42" fill="#ffe0b2" />
-          <!-- 耳 -->
-          <circle cx="370" cy="65" r="14" fill="#ffe0b2" />
-          <circle cx="430" cy="65" r="14" fill="#ffe0b2" />
-          <!-- 目 -->
-          <circle cx="385" cy="90" r="4" fill="#5d4037" />
-          <circle cx="415" cy="90" r="4" fill="#5d4037" />
-          <!-- 口元 -->
-          <ellipse cx="400" cy="108" rx="14" ry="10" fill="#ffcc80" />
-          <circle cx="397" cy="108" r="2.2" fill="#5d4037" />
-          <circle cx="403" cy="108" r="2.2" fill="#5d4037" />
-          <path d="M393 113 Q400 118 407 113" stroke="#5d4037" stroke-width="2" fill="none" />
-
-          <!-- 白衣の襟 -->
-          <path d="M372 130 L400 150 L428 130 L420 170 L380 170 Z" fill="#ffffff" stroke="#cfd8dc" stroke-width="2" />
-          <!-- ネクタイ -->
-          <polygon points="400,135 392,150 408,150" fill="#42a5f5" />
-          <polygon points="400,150 392,172 408,172" fill="#1e88e5" />
-
-          <!-- 頭の上に帽子（薬剤師っぽく） -->
-          <rect x="380" y="50" width="40" height="10" rx="3" fill="#ffffff" stroke="#cfd8dc" stroke-width="2" />
-          <rect x="388" y="40" width="24" height="12" rx="3" fill="#ffffff" stroke="#cfd8dc" stroke-width="2" />
-          <rect x="394" y="43" width="12" height="6" rx="2" fill="#42a5f5" />
-
-          <!-- 右：薬瓶 -->
-          <rect x="570" y="55" width="70" height="90" rx="12" fill="#ffffff" stroke="#b0bec5" stroke-width="2" />
-          <rect x="582" y="40" width="46" height="20" rx="6" fill="#90caf9" stroke="#64b5f6" stroke-width="2" />
-          <!-- ラベル -->
-          <rect x="580" y="78" width="50" height="28" rx="6" fill="#e3f2fd" />
-          <rect x="593" y="85" width="24" height="6" rx="3" fill="#42a5f5" />
-          <rect x="593" y="95" width="20" height="4" rx="2" fill="#90a4ae" />
-
-          <!-- 右：錠剤（丸＋カプセル） -->
-          <!-- 丸錠 -->
-          <circle cx="670" cy="120" r="14" fill="#ffffff" stroke="#b0bec5" stroke-width="2" />
-          <line x1="658" y1="120" x2="682" y2="120" stroke="#b0bec5" stroke-width="2" />
-          <!-- カプセル -->
-          <rect x="690" y="110" width="52" height="22" rx="11" fill="#ffffff" stroke="#b0bec5" stroke-width="2" />
-          <rect x="690" y="110" width="26" height="22" rx="11" fill="#ff8a65" />
-          <line x1="716" y1="111" x2="716" y2="131" stroke="#ffccbc" stroke-width="2" />
-
-          <!-- 下部の軽いテキスト風ライン -->
-          <line x1="260" y1="170" x2="540" y2="170" stroke="#bbdefb" stroke-width="3" stroke-linecap="round" />
-        </svg>
+      <!-- ロゴ＋タイトル -->
+      <div class="logo-row">
+        <img src="/img/logo-kumayaku.png" alt="くまやくロゴ" class="site-logo">
+        <div class="logo-text">
+          <div class="badge">薬剤師国家試験対策 Webアプリ集</div>
+          <h1 class="site-title">くまやく 薬剤師国家試験トレーニングハブ</h1>
+          <p class="site-subtitle">
+            悟り顔のくま薬剤師と一緒に、薬理・病態・薬物治療・法規・実務などを<br>
+            スキマ時間で反復トレーニングできる薬学生向けの個人運営サイトです。
+          </p>
+        </div>
       </div>
 
-      <div class="badge">薬剤師国家試験対策 Webアプリ集</div>
-      <h1 class="site-title">薬剤師国家試験トレーニングHub</h1>
-      <p class="site-subtitle">
-        薬剤師国家試験の主要分野（薬理・病態・薬物治療・法規・実務など）を、<br>
-        スキマ時間で反復トレーニングできる個人運営の学習サイトです。
-      </p>
+      <!-- ヘッダーバナー画像 -->
+      <div class="hero-visual">
+        <img src="/img/header-kumayaku.png" alt="くまやく 薬剤師国家試験トレーニングハブのヘッダー画像">
+      </div>
     </header>
-    
 
     <!-- トップページ用 広告枠（審査通過後にここにコードを貼る） -->
     <div class="ad-area">
@@ -328,7 +292,7 @@
     </div>
 
     <main>
-      <h2 class="section-title">学習アプリ一覧</h2>
+      <h2 class="section-title">アプリ一覧（薬剤師国家試験対策）</h2>
 
       <div class="apps-grid">
         <!-- 1. 薬理・作用機序（現在稼働中） -->
@@ -388,15 +352,14 @@
         <strong>■ 注意事項・コンテンツポリシー</strong><br>
         本サイトに掲載されている問題・選択肢・解説は、薬剤師国家試験の出題範囲を参考にしつつ、
         運営者が独自に作成したオリジナルコンテンツです。<br>
-        実際の国家試験問題や予備校教材（例：:contentReference[oaicite:0]{index=0} 等）の
-        問題文・解説を引用・転載したものではありません。<br>
+        実際の国家試験問題や予備校教材などの問題文・解説を引用・転載したものではありません。<br>
         各教育機関・企業とは一切関係のない非公式サイトであり、内容の正確性・完全性を保証するものではありません。
         学習の補助としてご利用ください。
       </section>
     </main>
 
     <footer>
-      © 2026 薬剤師国家試験トレーニングHub（個人運営）<br>
+      © 2026 くまやく 薬剤師国家試験トレーニングハブ（個人運営）<br>
       本サイトの利用により生じたいかなる損害についても、運営者は責任を負いかねます。
 
       <div class="footer-links">
